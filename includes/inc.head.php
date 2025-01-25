@@ -45,8 +45,8 @@
           <li><a href="index.php" class="active">Inicio</a></li>
           <li><a href="concursocild.php">Concurso CILD</a></li>
           <li><a href="granprix.php">Gran Prix</a></li>
-          <li><a href="seminario.html">Seminario</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="seminario.php">Seminario</a></li>
+          <li><a href="contacto.php">Contacto</a></li>
           <li class="dropdown"><a href="#"><span>Galería</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul> </li>
               <li><a href="./CILD2017.php">CILD 2017</a></li>
