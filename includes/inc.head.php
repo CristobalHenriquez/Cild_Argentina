@@ -37,7 +37,6 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo2.png" alt="Cild Argentina">
-        <!-- <h1 class="sitename">AgriCulture</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
