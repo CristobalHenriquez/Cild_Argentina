@@ -1,7 +1,7 @@
 <?php include_once 'includes/inc.head.php'; ?>
 
     <div class="container py-5">
-    <h3>Galería de Fotos del "CILD 2017"</h3>
+    <h3>Galería de Fotos del "CILD 2019"</h3>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -114,26 +114,31 @@
         data() {
           return {
             photos: [
-              'assets/img/CILD2017/C (1).jpg',
-              'assets/img/CILD2017/C (2).jpg',
-              'assets/img/CILD2017/C (3).jpg',
-              'assets/img/CILD2017/C (4).jpg',
-              'assets/img/CILD2017/C (5).jpg',
-              'assets/img/CILD2017/C (6).jpg',
-              'assets/img/CILD2017/C (7).jpg',
-              'assets/img/CILD2017/C (8).jpg',
-              'assets/img/CILD2017/C (9).jpg',
-              'assets/img/CILD2017/C (10).jpg',
-              'assets/img/CILD2017/C (11).jpg',
-              'assets/img/CILD2017/C (12).jpg',
-              'assets/img/CILD2017/C (13).jpg',
-              'assets/img/CILD2017/C (14).jpg',
-              'assets/img/CILD2017/C (15).jpg',
-              'assets/img/CILD2017/C (16).jpg',
-              'assets/img/CILD2017/C (17).jpg',
-              'assets/img/CILD2017/C (18).jpg',
-              'assets/img/CILD2017/C (19).jpg',
-              'assets/img/CILD2017/C (20).jpg',
+                            'assets/img/CILD2019/Cild (1).jpg',
+                            'assets/img/CILD2019/Cild (2).jpg',
+                            'assets/img/CILD2019/Cild (3).jpg',
+                            'assets/img/CILD2019/Cild (4).jpg',
+                            'assets/img/CILD2019/Cild (5).jpg',
+                            'assets/img/CILD2019/Cild (6).jpg',
+                            'assets/img/CILD2019/Cild (7).jpg',
+                            'assets/img/CILD2019/Cild (8).jpg',
+                            'assets/img/CILD2019/Cild (9).jpg',
+                            'assets/img/CILD2019/Cild (10).jpg',
+                            'assets/img/CILD2019/Cild (11).jpg',
+                            'assets/img/CILD2019/Cild (12).jpg',
+                            'assets/img/CILD2019/Cild (13).jpg',
+                            'assets/img/CILD2019/Cild (14).jpg',
+                            'assets/img/CILD2019/Cild (15).jpg',
+                            'assets/img/CILD2019/Cild (16).jpg',
+                            'assets/img/CILD2019/Cild (17).jpg',
+                            'assets/img/CILD2019/Cild (18).jpg',
+                            'assets/img/CILD2019/Cild (19).jpg',
+                            'assets/img/CILD2019/Cild (20).jpg',
+                            'assets/img/CILD2019/Cild (21).jpg',
+                            'assets/img/CILD2019/Cild (22).jpg',
+                            'assets/img/CILD2019/Cild (23).jpg',
+                            'assets/img/CILD2019/Cild (24).jpg',
+                            'assets/img/CILD2019/Cild (25).jpg', 
             ]
           };
         }

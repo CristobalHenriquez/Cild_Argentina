@@ -1,7 +1,7 @@
 <?php include_once 'includes/inc.head.php'; ?>
 
     <div class="container py-5">
-    <h3>Galería de Fotos del "CILD 2017"</h3>
+    <h3>Galería de Fotos del "CILD 2022"</h3>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -114,26 +114,48 @@
         data() {
           return {
             photos: [
-              'assets/img/CILD2017/C (1).jpg',
-              'assets/img/CILD2017/C (2).jpg',
-              'assets/img/CILD2017/C (3).jpg',
-              'assets/img/CILD2017/C (4).jpg',
-              'assets/img/CILD2017/C (5).jpg',
-              'assets/img/CILD2017/C (6).jpg',
-              'assets/img/CILD2017/C (7).jpg',
-              'assets/img/CILD2017/C (8).jpg',
-              'assets/img/CILD2017/C (9).jpg',
-              'assets/img/CILD2017/C (10).jpg',
-              'assets/img/CILD2017/C (11).jpg',
-              'assets/img/CILD2017/C (12).jpg',
-              'assets/img/CILD2017/C (13).jpg',
-              'assets/img/CILD2017/C (14).jpg',
-              'assets/img/CILD2017/C (15).jpg',
-              'assets/img/CILD2017/C (16).jpg',
-              'assets/img/CILD2017/C (17).jpg',
-              'assets/img/CILD2017/C (18).jpg',
-              'assets/img/CILD2017/C (19).jpg',
-              'assets/img/CILD2017/C (20).jpg',
+                            'assets/img/CILD2022/1.jpg',
+                            'assets/img/CILD2022/2.jpg',
+                            'assets/img/CILD2022/3.jpg',
+                            'assets/img/CILD2022/4.jpg',
+                            'assets/img/CILD2022/5.jpg',
+                            'assets/img/CILD2022/6.jpg',
+                            'assets/img/CILD2022/7.jpg',
+                            'assets/img/CILD2022/8.jpg',
+                            'assets/img/CILD2022/9.jpg',
+                            'assets/img/CILD2022/10.jpg',
+                            'assets/img/CILD2022/11.jpg',
+                            'assets/img/CILD2022/12.jpg',
+                            'assets/img/CILD2022/13.jpg',
+                            'assets/img/CILD2022/14.jpg',
+                            'assets/img/CILD2022/15.jpg',
+                            'assets/img/CILD2022/16.jpg',
+                            'assets/img/CILD2022/17.jpg',
+                            'assets/img/CILD2022/18.jpg',
+                            'assets/img/CILD2022/19.jpg',
+                            'assets/img/CILD2022/20.jpg',
+                            'assets/img/CILD2022/21.jpg',
+                            'assets/img/CILD2022/22.jpg',
+                            'assets/img/CILD2022/23.jpg',
+                            'assets/img/CILD2022/24.jpg',
+                            'assets/img/CILD2022/25.jpg',
+                            'assets/img/CILD2022/26.jpg',
+                            'assets/img/CILD2022/27.jpg',
+                            'assets/img/CILD2022/28.jpg',
+                            'assets/img/CILD2022/29.jpg',
+                            'assets/img/CILD2022/30.jpg',
+                            'assets/img/CILD2022/31.jpg',
+                            'assets/img/CILD2022/32.jpg',
+                            'assets/img/CILD2022/33.jpg',
+                            'assets/img/CILD2022/34.jpg',
+                            'assets/img/CILD2022/35.jpg',
+                            'assets/img/CILD2022/36.jpg',
+                            'assets/img/CILD2022/37.jpg',
+                            'assets/img/CILD2022/38.jpg',
+                            'assets/img/CILD2022/39.jpg',
+                            'assets/img/CILD2022/40.jpg',
+                            'assets/img/CILD2022/41.jpg',
+                            'assets/img/CILD2022/42.jpg'
             ]
           };
         }
