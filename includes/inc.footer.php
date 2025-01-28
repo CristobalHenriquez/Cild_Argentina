@@ -1,31 +1,51 @@
-
 <footer id="footer" class="footer dark-background">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Información del evento -->
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"><strong>CILD </strong>Concurso Internacional<br>Latinoamérica de Danza</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Teatro Actor Aldo Braga, Entre Ríos 510, 
+              San Lorenzo, Santa Fe, Argentina.</p>
+          </div>
+        </div>
 
-<div class="footer-top">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">Concurso Internacional Latinoamérica de Danza</span>
-        </a>
-        <div class="footer-contact pt-3">
-          <p>Teatro Actor Aldo Braga, Entre Ríos 510, 
-            San Lorenzo, Santa Fe, Argentina. </p>
+        <!-- Redes sociales -->
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Síguenos</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Logo del patrocinador o adicional -->
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Patrocinador</h4>
+          <a href="#" target="_blank">
+            <img src="assets/img/logosanlorenzo.png" alt="Municipalidad de San Lorenzo" class="footer-logo">
+          </a>
         </div>
       </div>
-      
-      <div class="col-lg-2 col-md-3 footer-links">
-        
-        <img src="assets/img/logosanlorenzo.png" alt="AgriCulture">
-      </div>
-
     </div>
   </div>
-</div>
-</footer>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Sección inferior del footer -->
+  <div class="footer-bottom text-center py-3">
+    <p>&copy; 2025 Concurso Internacional Latinoamérica de Danza. Todos los derechos reservados.</p>
+    <div class="footer-logo mt-3">
+      <a href="#" target="_blank">
+        <img src="assets/img/Logo_Artisans_.png" alt="Logo Artisans" style="max-width: 150px; height: auto;">
+      </a>
+    </div>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+</footer>
 
 <!-- Preloader -->
 <div id="preloader"></div>
@@ -43,5 +63,4 @@
 <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
