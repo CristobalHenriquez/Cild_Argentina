@@ -21,7 +21,7 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #414344; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #970d0d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #116530; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #F29100; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -48,7 +48,7 @@
   --background-color: #060606;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --accent-color: #2ea359;
+  --accent-color: #F29100;
   --surface-color: #252525;
   --contrast-color: #ffffff;
 }
@@ -235,7 +235,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 64px;
   margin-right: 8px;
 }
 
@@ -251,6 +251,273 @@ h6 {
 }
 
 
+/*--------------------------------------------------------------
+# Hero 2 Section
+--------------------------------------------------------------*/
+.hero-2 {
+  padding-top: 80px;
+}
+
+.hero-2 .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+.hero-2 .hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-2 .image-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+}
+
+.hero-2 .image-grid .grid-item {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.hero-2 .image-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-2 .image-grid .grid-item img:hover {
+  transform: scale(1.05);
+}
+
+.hero-2 .image-grid .item-1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-1 {
+    grid-column: 1/7;
+  }
+}
+
+.hero-2 .image-grid .item-2 {
+  grid-column: 4/7;
+  grid-row: 1/2;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-2 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+}
+
+.hero-2 .image-grid .item-3 {
+  grid-column: 7/13;
+  grid-row: 1/3;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-3 {
+    grid-column: 4/7;
+    grid-row: 2/3;
+  }
+}
+
+.hero-2 .image-grid .item-4 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-4 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+
+.hero-2 .image-grid .item-5 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-5 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+}
+
+.hero-2 .image-grid .item-6 {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+@media (max-width: 768px) {
+  .hero-2 .image-grid .item-6 {
+    grid-column: 5/7;
+    grid-row: 3/4;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .subtitle {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about .title {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about .description {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about .trusted-title {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about .trusted-description {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about .feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.about .feature-list li {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.about .feature-list li i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+.about .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+}
+
+.about .image-grid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.about .image-grid img {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .image-grid .main-image {
+  width: 75%;
+  height: 75%;
+  top: 0;
+  left: 5%;
+  object-fit: cover;
+  border: 5px solid var(--surface-color);
+}
+
+.about .image-grid .overlay-image-1 {
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  left: 2%;
+  object-fit: cover;
+  z-index: 1;
+  border: 5px solid var(--surface-color);
+}
+
+.about .image-grid .overlay-image-2 {
+  width: 50%;
+  height: 50%;
+  bottom: 10%;
+  right: 10%;
+  object-fit: cover;
+  z-index: 2;
+  border: 5px solid var(--surface-color);
+}
+
+@media (max-width: 991.98px) {
+  .about .image-grid {
+    margin-bottom: 2rem;
+  }
+
+  .about .image-grid .main-image {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+
+  .about .image-grid .overlay-image-1 {
+    width: 45%;
+    height: 45%;
+    bottom: 0;
+    left: 4%;
+  }
+
+  .about .image-grid .overlay-image-2 {
+    width: 45%;
+    height: 45%;
+    bottom: 0;
+    right: 4%;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -276,7 +543,7 @@ h6 {
   .navmenu a:focus {
     color: white;
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 22px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -301,7 +568,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: rgb(196, 131, 131);
+    color: #fdfdfd;
   }
 
   .navmenu .dropdown ul {
@@ -499,7 +766,7 @@ h6 {
 }
 
 .footer .footer-top {
-  background-color: color-mix(in srgb, var(--background-color), white 5%);
+  background-color: color-mix(in srgb, var(--background-color), rgb(11, 11, 11) 5%);
   padding-top: 50px;
 }
 

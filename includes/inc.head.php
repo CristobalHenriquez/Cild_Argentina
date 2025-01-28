@@ -37,7 +37,6 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo2.png" alt="Cild Argentina">
-        <!-- <h1 class="sitename">AgriCulture</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -50,10 +49,17 @@
           <li class="dropdown"><a href="#"><span>Galería</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul> </li>
               <li><a href="./CILD2017.php">CILD 2017</a></li>
+<<<<<<< HEAD
                   <li><a href="./CILD2018.php">CILD 2018</a></li>
                   <li><a href="./CILD2019.php">CILD 2019</a></li>
                   <li><a href="./CILD2021.php">CILD 2021</a></li>
                   <li><a href="./CILD2022.php">CILD 2022</a></li>
+=======
+                  <li><a href="./CILD2017.php">CILD 2018</a></li>
+                  <li><a href="./CILD2018.php">CILD 2019</a></li>
+                  <li><a href="./CILD2019.php">CILD 2021</a></li>
+                  <li><a href="./CILD2021.php">CILD 2022</a></li>
+>>>>>>> 9700610811e7324f8ec36c7a9c6ec57585decccd
             </ul>
           </li>
         </ul>
