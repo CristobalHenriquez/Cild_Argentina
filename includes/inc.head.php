@@ -24,6 +24,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <!-- Script formulario-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -49,17 +55,10 @@
           <li class="dropdown"><a href="#"><span>Galería</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul> </li>
               <li><a href="./CILD2017.php">CILD 2017</a></li>
-<<<<<<< HEAD
                   <li><a href="./CILD2018.php">CILD 2018</a></li>
                   <li><a href="./CILD2019.php">CILD 2019</a></li>
                   <li><a href="./CILD2021.php">CILD 2021</a></li>
                   <li><a href="./CILD2022.php">CILD 2022</a></li>
-=======
-                  <li><a href="./CILD2017.php">CILD 2018</a></li>
-                  <li><a href="./CILD2018.php">CILD 2019</a></li>
-                  <li><a href="./CILD2019.php">CILD 2021</a></li>
-                  <li><a href="./CILD2021.php">CILD 2022</a></li>
->>>>>>> 9700610811e7324f8ec36c7a9c6ec57585decccd
             </ul>
           </li>
         </ul>
