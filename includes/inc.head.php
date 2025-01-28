@@ -50,10 +50,10 @@
           <li class="dropdown"><a href="#"><span>Galería</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul> </li>
               <li><a href="./CILD2017.php">CILD 2017</a></li>
-                  <li><a href="#">CILD 2018</a></li>
-                  <li><a href="#">CILD 2019</a></li>
-                  <li><a href="#">CILD 2021</a></li>
-                  <li><a href="#">CILD 2022</a></li>
+                  <li><a href="./CILD2018.php">CILD 2018</a></li>
+                  <li><a href="./CILD2019.php">CILD 2019</a></li>
+                  <li><a href="./CILD2021.php">CILD 2021</a></li>
+                  <li><a href="./CILD2022.php">CILD 2022</a></li>
             </ul>
           </li>
         </ul>
