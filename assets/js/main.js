@@ -7,7 +7,7 @@
 */
 
 
-/*FUNCIONES DEL FORMULARIO*/
+/*FUNCIONES DEL FORMULARIO 29-1*/
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('generatePdf').addEventListener('click', async function () {
     const { jsPDF } = window.jspdf;
@@ -36,13 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'Division': getElementValue('inputDivision'),
       'Coreografía': document.querySelector('input[name="coreografia"]:checked')?.value || "No especificado",
       'Tipo de coreo': getElementValue('inputWebsite'),
-      'Grand prix categoría': document.querySelector('input[name="categoria"]:checked').value,
-      'Grand prix división': document.querySelector('input[name="division"]:checked').value,
+      'Grand prix categoría': document.querySelector('input[name="categoria"]:checked')?.value || "No especificado",
+      'Grand prix división': document.querySelector('input[name="division"]:checked')?.value || "No especificado",
       'Primera variación clásica': getElementValue('inputPrimeravariacion'),
       'Segunda variación clásica': getElementValue('inputSegundavariacion'),
       'Coreografía de contemporáneo': getElementValue('inputCoreoContem'),
-      'Duración comtemporáneo': getElementValue('inputDuracionContem'),
+      'Duración contemporáneo': getElementValue('inputDuracionContem'),
       'Pas de Deux': getElementValue('inputPasDeDeux'),
+      'Formulario': getElementValue('formName') // Incluimos el campo oculto formName aquí
     };
 
     // Crear contenido principal del PDF
@@ -64,6 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const formDataToSend = new FormData();
     formDataToSend.append("pdf", pdfBlob, "formulario_con_archivos.pdf");
 
+    // Añadir el nombre del formulario al FormData
+    formDataToSend.append("formName", getElementValue('formName')); // Aquí se añadió esta línea
+
     for (const inputId of fileInputs) {
       const fileInput = document.getElementById(inputId);
       if (fileInput && fileInput.files.length > 0) {
@@ -77,15 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formDataToSend,
       });
       if (response.ok) {
-        alert("PDF y archivos enviados al servidor con éxito.");
+        alert("Formulario enviado con éxito.");
+        window.location.href = "index.php"; // Redirección a index.php
       } else {
         alert("Error al enviar el PDF y archivos al servidor.");
       }
     } catch (error) {
-      // Agregamos más detalles al mensaje de error en el catch
       console.error("Error:", error);
       alert(`Error al conectar con el servidor. Detalles del error: ${error.message}`);
     }
+    
   });
 });
 
