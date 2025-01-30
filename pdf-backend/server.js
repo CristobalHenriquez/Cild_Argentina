@@ -5,9 +5,16 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
 require("dotenv").config(); // Cargar variables de entorno
+const cors = require("cors");
+
+
+
+
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 // Configuración de Multer para manejar archivos subidos
 const upload = multer({ dest: "uploads/" });

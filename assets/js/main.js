@@ -81,15 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formDataToSend,
       });
       if (response.ok) {
-        alert("PDF y archivos enviados al servidor con éxito.");
+        alert("Formulario enviado con éxito.");
+        window.location.href = "index.php"; // Redirección a index.php
       } else {
         alert("Error al enviar el PDF y archivos al servidor.");
       }
     } catch (error) {
-      // Agregamos más detalles al mensaje de error en el catch
       console.error("Error:", error);
       alert(`Error al conectar con el servidor. Detalles del error: ${error.message}`);
     }
+    
   });
 });
 
