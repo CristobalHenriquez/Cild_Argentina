@@ -8,7 +8,7 @@
             <span class="sitename"><strong>CILD </strong>Concurso Internacional<br>Latinoamérica de Danza</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Teatro Actor Aldo Braga, Entre Ríos 510, 
+            <p>Teatro Actor Aldo Braga, Entre Ríos 510,<br> 
               San Lorenzo, Santa Fe, Argentina.</p>
           </div>
         </div>
