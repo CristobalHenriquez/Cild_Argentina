@@ -40,7 +40,6 @@
     </div>
 
   </section><!-- /Hero 2 Section -->
-
   <!-- About Section -->
   <section id="about" class="about section">
     <div class="container">
@@ -84,6 +83,51 @@
       </div>
     </div>
     </div>
-  </section><!-- /About Section -->
+  </section>
+  <section id="contact" class="contact section">
+    <div class="container" data-aos="fade">
+      <div class="row gy-5 gx-lg-5 align-items-center">
+
+        <!-- Información de Contacto -->
+        <div class="col-lg-6">
+          <div class="info">
+            <h2 class="mb-4" style="color: var(--text-color, rgb(51, 52, 54));">Estamos en contacto</h2>
+            <p style="color: var(--text-color, rgb(51, 52, 54));">Nos encantaría escucharte. Contáctanos para más información, consultas o cualquier duda que tengas.</p>
+
+            <div class="info-item d-flex mb-4">
+              <i class="bi bi-geo-alt flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
+              <div>
+                <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Ubicación:</h4>
+                <p>Teatro Actor Aldo Braga, Entre Ríos 510, San Lorenzo, Santa Fe, Argentina.</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex mb-4">
+              <i class="bi bi-envelope flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
+              <div>
+                <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Email:</h4>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
+              <div>
+                <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Teléfono:</h4>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-lg-6">
+          <iframe class="w-100" style="height: 400px; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8536956590274!2d-60.73520132461904!3d-32.743075361635235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65b5d5b10dac5%3A0x867d08dc48d4c9d3!2sTeatro%20Actor%20Aldo%20Braga!5e0!3m2!1ses!2sar!4v1734273576584!5m2!1ses!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
 <?php include_once 'includes/inc.footer.php'; ?>

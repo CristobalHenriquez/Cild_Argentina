@@ -1,7 +1,9 @@
 <style>
     .modal-dialog {
-        max-width: 600px; /* Ancho máximo para escritorio */
-        width: 95%; /* Ajuste responsivo para dispositivos más pequeños */
+        max-width: 600px;
+        /* Ancho máximo para escritorio */
+        width: 95%;
+        /* Ajuste responsivo para dispositivos más pequeños */
         margin: auto;
     }
 
@@ -82,23 +84,27 @@
             </div>
             <div class="modal-body">
                 <h3>Confirmación de Inscripciones</h3>
-                <p>Las inscripciones a los diferentes cursos se deben <strong>CONFIRMAR</strong> hasta el <strong>22 de septiembre de 2025</strong>.</p>
-                <h4>Cursos</h4>
-                <p>Las clases del Seminario de Danza del CILD® 2025 se desarrollarán según el cronograma:</p>
+                <p><strong>Viernes 3/10</strong></p>
                 <ul>
-                    <li><strong>Viernes 3 de octubre:</strong></li>
-                    <ul>
-                        <li>14:00 a 15:30 hs: Clásico Avanzado con el maestro Alexander Ananiev</li>
-                        <li>15:30 a 17:00 hs: Clásico Intermedio con la maestra Alba Serra</li>
-                    </ul>
+                    <li>13:00 a 14:30: Clásico avanzado. Maestro Alexander Ananiev. Clase Grand Prix (obligatoria para participantes Grand Prix).</li>
+                    <li>14:30 a 16:00: Clásico intermedio. Maestra Alba Serra. Clase Grand Prix (obligatoria para participantes Grand Prix).</li>
+                </ul>
+                <p>Para todos los participantes:</p>
+                <ul>
+                    <li>16:00 a 17:30: Clásico avanzado. Maestro Alexander Ananiev.</li>
+                    <li>17:30 a 19:00: Clásico intermedio. Maestra Alba Serra.</li>
+                    <li>16:00 a 17:30: Clase jazz. Maestro Daniel Bartra (en escenario).</li>
                 </ul>
                 <h4>Importes</h4>
                 <ul>
-                    <li><strong>1 (una) clase:</strong> $25,000 pesos / USD 25</li>
-                    <li><strong>2 (dos) clases:</strong> $40,000 pesos / USD 40</li>
+                    <li><strong>1 clase:</strong> $20,000 / USD 20</li>
+                    <li><strong>2 clases:</strong> $30,000 / USD 30</li>
+                    <li><strong>3 clases:</strong> $40,000 / USD 40</li>
                 </ul>
+                <p>Los maestros que traen a sus alumnas a los cursos pueden presenciar la clase.</p>
+
                 <h4>Medios de Pago</h4>
-                <p><strong>Para Depósitos en Argentina (Pesos Argentinos):</strong></p>
+                <p><strong>Para Depósitos / Transferencias en Argentina (Pesos Argentinos):</strong></p>
                 <ul>
                     <li><strong>Banco:</strong> Banco Macro S.A</li>
                     <li><strong>Titular:</strong> Christtin Ramon Omar</li>
@@ -113,5 +119,6 @@
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
+
     </div>
 </div>

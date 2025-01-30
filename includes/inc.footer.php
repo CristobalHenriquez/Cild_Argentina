@@ -61,6 +61,9 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<a href="https://wa.me/5493764350290?text=Hola%20me%20gustaría%20más%20información%20sobre..." class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 </body>
 </html>
