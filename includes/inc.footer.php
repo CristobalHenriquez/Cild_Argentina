@@ -56,9 +56,9 @@
 
   <!-- Sección inferior del footer -->
   <div class="footer-bottom text-center py-3">
-    <p>&copy; 2025 Concurso Internacional Latinoamérica de Danza. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Concurso Internacional Latinoamérica de Danza.<br>Todos los derechos reservados.</p>
     <div class="footer-logo mt-3">
-      <a href="#" target="_blank">
+      <a href="https://www.linkedin.com/in/cristobalhenriquezbohmwald/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
         <img src="assets/img/Logo_Artisans_.png" alt="Logo Artisans" style="max-width: 150px; height: auto;">
       </a>
     </div>
