@@ -26,8 +26,8 @@
     <h2>Descarga el documento</h2>
     <p>Puedes descargar los documentos haciendo clic en los botones a continuación:</p>
     <div class="d-flex gap-3">
-      <a href="documento.docx" download="documento.docx" class="btn btn-dark">Exención de Responsabilidad</a>
-      <a href="documento.docx" download="documento.docx" class="btn btn-dark">Autorización del Participante Menor</a>
+      <a href="/docs/ExenciondeResponsabilidad.pdf" download="documento.docx" class="btn btn-dark">Exención de Responsabilidad</a>
+      <a href="/docs/AutorizacionMenores.pdf" download="documento.docx" class="btn btn-dark">Autorización del Participante Menor</a>
     </div>
     <hr class="my-4">
   </section>
