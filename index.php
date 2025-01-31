@@ -98,15 +98,20 @@
               <i class="bi bi-geo-alt flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
               <div>
                 <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Ubicación:</h4>
-                <p>Teatro Actor Aldo Braga, Entre Ríos 510, San Lorenzo, Santa Fe, Argentina.</p>
+                <p>
+                  <a href="https://www.google.com/maps?q=Teatro+Actor+Aldo+Braga,+Entre+R%C3%ADos+510,+San+Lorenzo,+Santa+Fe,+Argentina" 
+                     target="_blank" 
+                     style="color: var(--text-color, rgb(51, 52, 54)); text-decoration: none;">
+                    Teatro Actor Aldo Braga, Entre Ríos 510, San Lorenzo, Santa Fe, Argentina
+                  </a>
+                </p>
               </div>
             </div>
-
             <div class="info-item d-flex mb-4">
               <i class="bi bi-envelope flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
               <div>
                 <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Email:</h4>
-                <p>info@example.com</p>
+                <p><a href="mailto:info@cildargentina.com">info@cildargentina.com</a></p>
               </div>
             </div>
 
@@ -114,7 +119,7 @@
               <i class="bi bi-phone flex-shrink-0 me-3 fs-3" style="color: var(--primary-color, rgb(51, 52, 54));"></i>
               <div>
                 <h4 class="mb-2" style="color: var(--text-color, rgb(51, 52, 54));">Teléfono:</h4>
-                <p>+1 5589 55488 55</p>
+                <p><a href="tel:+5493764350290" style="color: var(--text-color, rgb(51, 52, 54)); text-decoration: none;">+54 9 376 435-0290</a></p>
               </div>
             </div>
           </div>

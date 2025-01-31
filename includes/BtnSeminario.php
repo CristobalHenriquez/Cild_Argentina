@@ -65,6 +65,7 @@
                 <ul>
                     <li><strong>Clásico Nivel Intermedio:</strong> Alba Serra</li>
                     <li><strong>Clásico Nivel Avanzado:</strong> Alexander Nikolaievich Ananiev</li>
+                    <li><strong>Danza Jazz:</strong> Daniel Bartra</li>
                 </ul>
             </div>
             <div class="modal-footer">

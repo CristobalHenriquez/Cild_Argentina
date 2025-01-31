@@ -1,20 +1,38 @@
 <footer id="footer" class="footer dark-background">
   <div class="footer-top">
     <div class="container">
-      <div class="row gy-4">
+      <div class="row gy-4 align-items-center justify-content-between">
+
         <!-- Información del evento -->
-        <div class="col-lg-6 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename"><strong>CILD </strong>Concurso Internacional<br>Latinoamérica de Danza</span>
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.php" class="logo d-flex align-items-center">
+            <h3 class="sitename"><strong>CILD </strong>Concurso Internacional<br>Latinoamérica de Danza</h3>
           </a>
           <div class="footer-contact pt-3">
-            <p>Teatro Actor Aldo Braga, Entre Ríos 510,<br> 
+            <p>Teatro Actor Aldo Braga, Entre Ríos 510,<br>
               San Lorenzo, Santa Fe, Argentina.</p>
           </div>
         </div>
 
-        <!-- Redes sociales -->
+        <!-- Prepara tu llegada -->
         <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Prepara tu llegada</h4>
+          <ul>
+            <li>
+              <a href="https://sanlorenzo.gob.ar/gastronomia/" target="_blank" rel="noopener" style="text-decoration: none;">
+                <i class="bi bi-geo-alt"></i> Gastronomía en San Lorenzo
+              </a>
+            </li>
+            <li>
+              <a href="https://sanlorenzo.gob.ar/alojamiento/" target="_blank" rel="noopener" style="text-decoration: none;">
+                <i class="bi bi-house-door"></i> Alojamiento en San Lorenzo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Síguenos</h4>
           <div class="social-links d-flex">
             <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
@@ -24,13 +42,14 @@
           </div>
         </div>
 
-        <!-- Logo del patrocinador o adicional -->
+        <!-- Logo adicional -->
         <div class="col-lg-3 col-md-3 footer-links">
-          <h4>Patrocinador</h4>
+          <h4>Organización</h4>
           <a href="#" target="_blank">
-            <img src="assets/img/logosanlorenzo.png" alt="Municipalidad de San Lorenzo" class="footer-logo">
+            <img src="assets/img/logo_gestion.svg" alt="Gestión Organizativa" class="footer-logo" style="max-width: 200px;">
           </a>
         </div>
+
       </div>
     </div>
   </div>
@@ -62,8 +81,9 @@
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
 <a href="https://wa.me/5493764350290?text=Hola%20me%20gustaría%20más%20información%20sobre..." class="whatsapp-float" target="_blank">
-    <i class="bi bi-whatsapp"></i>
+  <i class="bi bi-whatsapp"></i>
 </a>
 
 </body>
+
 </html>

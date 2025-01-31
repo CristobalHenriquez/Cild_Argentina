@@ -101,15 +101,15 @@
                 </ul>
                 <p>Copia del comprobante del depósito o transferencia de la Inscripción al Concurso correspondiente según el siguiente detalle:</p>
                 <ul>
-                    <li>Solistas: por cada competidor.</li>
-                    <li>Dúos: por cada competidor.</li>
-                    <li>Tríos: por cada competidor.</li>
-                    <li>Grupos: por cada competidor.</li>
-                    <li>Coreografías: por cada coreografía que compite.</li>
+                    <li>Solos: USD 50 / $50.000</li>
+                    <li>Dúos: USD 40 / $40.000 c/u</li>
+                    <li>Tríos: USD 30 / $30.000 c/u</li>
+                    <li>Grupos: USD 20 / $20.000 c/u</li>
+                    <li>Coreografías: USD 50 / $50.000</li>
                 </ul>
                 <hr>
                 <h4>MEDIOS DE PAGO</h4>
-                <h5>Para Depósitos en Argentina – en Pesos Argentinos ($)</h5>
+                <h5>Para Depósitos en Argentina / Transferencias – en Pesos Argentinos ($)</h5>
                 <ul>
                     <li><strong>Banco:</strong> Banco Macro S.A</li>
                     <li><strong>Titular:</strong> Christtin Ramon Omar</li>
