@@ -1,7 +1,7 @@
 <?php include_once 'includes/inc.head.php'; ?>
 
 <div class="container py-5">
-    <h3 class="text-center mb-4">Galería de Fotos del "CILD 2021"</h3>
+    <h1 class="text-center mb-4">Galería de Fotos del "CILD 2021"</h1>
     
     <style>
         .gallery-container {
