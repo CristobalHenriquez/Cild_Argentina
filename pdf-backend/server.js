@@ -38,14 +38,14 @@ app.post("/upload-pdf", upload.fields([
   }
 
   try {
-    // Configurar el transporte de correo con Nodemailer
+    // Configurar el transporte de correo con Nodemailer para Hostinger
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true, // Usa SSL
+      host: process.env.EMAIL_HOST,
+      port: process.env.EMAIL_PORT,
+      secure: true, // Usa SSL para el puerto 465
       auth: {
-        user: 'cillomartin.89@gmail.com',
-        pass: 'obbb gscq oqpe dfsd', // Contraseña de aplicación generada para Gmail
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // Contraseña del correo
       },
     });
 
@@ -69,10 +69,10 @@ app.post("/upload-pdf", upload.fields([
 
     // Configurar las opciones del correo
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: "cillo_747@hotmail.com", // Correo del destinatario
-      subject: "Formulario Inscripcion PDF y Archivos Adjuntos",
-      text: "Adjunto encontrarás el formulario de inscripcion en formato PDF con sus respectivos archivos.",
+      from: process.env.EMAIL_USER, // Dirección de origen
+      to: process.env.EMAIL_TO, // Dirección del destinatario
+      subject: "Formulario Inscripción PDF y Archivos Adjuntos",
+      text: "Adjunto encontrarás el formulario de inscripción en formato PDF con sus respectivos archivos.",
       attachments: attachments,
     };
 
