@@ -18,15 +18,27 @@
         </p>
     </section>
     <!-- Sección de descarga de documentos -->
+    <!-- Sección de descarga de documentos -->
     <section id="downloads" class="container py-5">
         <h2>Descarga el documento</h2>
         <p>Puedes descargar los documentos haciendo clic en los botones a continuación:</p>
         <div class="d-flex gap-3">
-            <a href="documento.docx" download="documento.docx" class="btn btn-dark">Exención de Responsabilidad</a>
-            <a href="documento.docx" download="documento.docx" class="btn btn-dark">Autorización del Participante Menor</a>
+            <a href="https://drive.google.com/file/d/1tr3iS_aIzVD4_6phlJOgF4QyZK12254y/view?usp=sharing"
+                class="btn btn-dark"
+                target="_blank"
+                rel="noopener noreferrer">
+                Exención de Responsabilidad
+            </a>
+            <a href="https://drive.google.com/file/d/12cs_h1UWu-OQ4J6tqfxVMVHaU1p2Vj1R/view?usp=sharing"
+                class="btn btn-dark"
+                target="_blank"
+                rel="noopener noreferrer">
+                Autorización del Participante Menor
+            </a>
         </div>
         <hr class="my-4">
     </section>
+
     <!-- Sección de botones -->
     <?php include_once 'includes/BtnGranPrix.php'; ?>
 
@@ -155,7 +167,7 @@
             </div>
             <hr class="my-4" style="border: 1px solid #ccc;">
             <h2 class="mb-4" style="color: gold;">Adjuntar MP3</h2>
-                <p>Adjuntar archivo mp3:</p>
+            <p>Adjuntar archivo mp3:</p>
             <div class="col-md-6">
                 <label for="inputFile4" class="form-label">Subir archivo MP3</label>
                 <input type="file" class="form-control" id="inputFile4" accept=".mp3" name="file4">

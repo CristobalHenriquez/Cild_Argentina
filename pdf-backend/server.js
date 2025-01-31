@@ -71,8 +71,8 @@ app.post("/upload-pdf", upload.fields([
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: "cillo_747@hotmail.com", // Correo del destinatario
-      subject: "Formulario PDF y Archivos Adjuntos",
-      text: "Adjunto encontrarás el formulario en formato PDF y otros archivos.",
+      subject: "Formulario Inscripcion PDF y Archivos Adjuntos",
+      text: "Adjunto encontrarás el formulario de inscripcion en formato PDF con sus respectivos archivos.",
       attachments: attachments,
     };
 
