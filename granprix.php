@@ -153,6 +153,13 @@
                 <label for="inputFilePayment" class="form-label">Comprobante de pago</label>
                 <input type="file" class="form-control" id="inputFilePayment" accept=".pdf" required>
             </div>
+            <hr class="my-4" style="border: 1px solid #ccc;">
+            <h2 class="mb-4" style="color: gold;">Adjuntar MP3</h2>
+                <p>Adjuntar archivo mp3:</p>
+            <div class="col-md-6">
+                <label for="inputFile4" class="form-label">Subir archivo MP3</label>
+                <input type="file" class="form-control" id="inputFile4" accept=".mp3" name="file4">
+            </div>
 
             <!-- Botón de envío -->
             <div class="col-12 text-center mt-4">
