@@ -1,28 +1,28 @@
+// Importación de módulos necesarios
 const express = require("express");
 const multer = require("multer");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
-require("dotenv").config(); // Cargar variables de entorno
+require("dotenv").config(); // Cargar variables de entorno desde un archivo .env
 const cors = require("cors");
 
-
-
-
-
+// Crear una instancia de la aplicación Express
 const app = express();
 const PORT = 3000;
 
+// Habilitar CORS para permitir solicitudes de diferentes orígenes
 app.use(cors());
 
 // Configuración de Multer para manejar archivos subidos
+// Los archivos se guardarán temporalmente en la carpeta "uploads/"
 const upload = multer({ dest: "uploads/" });
 
-// Middleware para procesar JSON
+// Middleware para procesar JSON en las solicitudes
 app.use(bodyParser.json());
 
-// Ruta para recibir el PDF y otros archivos
+// Definir una ruta POST para subir archivos
 app.post("/upload-pdf", upload.fields([
   { name: 'pdf', maxCount: 1 },
   { name: 'file1', maxCount: 1 },
@@ -32,22 +32,24 @@ app.post("/upload-pdf", upload.fields([
 ]), async (req, res) => {
   const { files } = req;
 
+  // Verificar si se recibió un archivo PDF
   if (!files || !files.pdf) {
     return res.status(400).send("No se recibió ningún archivo PDF.");
   }
 
   try {
-    // Configurar Nodemailer
+    // Configurar el transporte de correo con Nodemailer
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
       secure: true, // Usa SSL
       auth: {
         user: 'cillomartin.89@gmail.com',
-        pass: 'obbb gscq oqpe dfsd', // Usa la App Password generada
+        pass: 'obbb gscq oqpe dfsd', // Contraseña de aplicación generada para Gmail
       },
     });
 
+    // Preparar los archivos adjuntos para el correo
     const attachments = [
       {
         filename: files.pdf[0].originalname,
@@ -55,7 +57,7 @@ app.post("/upload-pdf", upload.fields([
       },
     ];
 
-    // Adjuntar otros archivos si existen
+    // Agregar otros archivos adjuntos si existen
     ['file1', 'file2', 'file3', 'file4'].forEach(fieldName => {
       if (files[fieldName]) {
         attachments.push({
@@ -65,30 +67,33 @@ app.post("/upload-pdf", upload.fields([
       }
     });
 
+    // Configurar las opciones del correo
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "cillo_747@hotmail.com", // Cambia al correo del destinatario
+      to: "cillo_747@hotmail.com", // Correo del destinatario
       subject: "Formulario PDF y Archivos Adjuntos",
       text: "Adjunto encontrarás el formulario en formato PDF y otros archivos.",
       attachments: attachments,
     };
 
-    // Enviar correo
+    // Enviar el correo
     await transporter.sendMail(mailOptions);
 
-    // Eliminar los archivos después de enviarlos
+    // Eliminar los archivos temporales después de enviarlos
     attachments.forEach((attachment) => {
       fs.unlinkSync(attachment.path);
     });
 
+    // Enviar respuesta de éxito
     res.status(200).send("PDF y archivos enviados correctamente.");
   } catch (error) {
+    // Manejar errores
     console.error("Error al enviar el correo:", error);
     res.status(500).send("Error al enviar el correo.");
   }
 });
 
-// Iniciar el servidor
+// Iniciar el servidor en el puerto especificado
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

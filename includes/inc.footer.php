@@ -45,7 +45,7 @@
         <!-- Logo adicional -->
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Organización</h4>
-          <a href="#" target="_blank">
+          <a href="https://sanlorenzo.gob.ar/ubicacion/" target="_blank">
             <img src="assets/img/logo_gestion.svg" alt="Gestión Organizativa" class="footer-logo" style="max-width: 200px;">
           </a>
         </div>
