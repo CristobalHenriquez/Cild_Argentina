@@ -26,18 +26,18 @@
     <h2>Descarga el documento</h2>
     <p>Puedes descargar los documentos haciendo clic en los botones a continuación:</p>
     <div class="d-flex gap-3">
-        <a href="https://drive.google.com/file/d/1tr3iS_aIzVD4_6phlJOgF4QyZK12254y/view?usp=sharing" 
-           class="btn btn-dark" 
-           target="_blank" 
-           rel="noopener noreferrer">
-           Exención de Responsabilidad
-        </a>
-        <a href="https://drive.google.com/file/d/12cs_h1UWu-OQ4J6tqfxVMVHaU1p2Vj1R/view?usp=sharing" 
-           class="btn btn-dark" 
-           target="_blank" 
-           rel="noopener noreferrer">
-           Autorización del Participante Menor
-        </a>
+      <a href="https://drive.google.com/file/d/1tr3iS_aIzVD4_6phlJOgF4QyZK12254y/view?usp=sharing"
+        class="btn btn-dark"
+        target="_blank"
+        rel="noopener noreferrer">
+        Exención de Responsabilidad
+      </a>
+      <a href="https://drive.google.com/file/d/12cs_h1UWu-OQ4J6tqfxVMVHaU1p2Vj1R/view?usp=sharing"
+        class="btn btn-dark"
+        target="_blank"
+        rel="noopener noreferrer">
+        Autorización del Participante Menor
+      </a>
     </div>
     <hr class="my-4">
   </section>
@@ -46,75 +46,78 @@
   <section id="buttons" class="container py-5 text-center">
     <h2>Información adicional</h2>
     <div class="row gap-2 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana1">Bases y Reglamento</button>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana2">Inscripción</button>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana3">Jurado</button>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana4">Competencia</button>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana5">Premios y Becas</button>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana1">Bases y Reglamento</button>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana2">Inscripción</button>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana3">Jurado</button>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana4">Competencia</button>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <button class="btn btn-danger w-100 mb-2" data-bs-toggle="modal" data-bs-target="#ventana5">Premios y Becas</button>
+      </div>
     </div>
   </section>
 
   <?php include_once 'includes/BtnConcursoCild.php'; ?>
-  
+
   <!-- Sección del formulario -->
   <section id="formulario" class="container py-5">
-    <h2 class="mb-4">Formulario de inscripción</h2>
-    <h2 class="mb-4" style="color: gold;">Datos del participante(solistas,dúos y tríos)</h2>
-    <form action="#" method="POST" class="row g-3">
-    <input type="hidden" id="formName" value="Concurso CILD">
-      <!-- 20 inputs -->
+    <h2 class="mb-4 text-center">Formulario de inscripción</h2>
+    <h2 class="mb-4 text-warning">Datos del participante (Solistas, Dúos y Tríos)</h2>
+
+    <form action="process_form.php" method="POST" enctype="multipart/form-data" class="row g-3">
+      <input type="hidden" name="formulario_origen" value="concursocild">
+
+      <!-- Datos personales -->
       <div class="col-md-6">
         <label for="inputName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputName" required>
+        <input type="text" class="form-control" id="inputName" name="nombre" required>
       </div>
       <div class="col-md-6">
         <label for="inputLastName" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="inputLastName" required>
+        <input type="text" class="form-control" id="inputLastName" name="apellido" required>
       </div>
       <div class="col-md-6">
         <label for="inputDni" class="form-label">Número CI / Pasaporte / DNI</label>
-        <input type="dni" class="form-control" id="inputDni" required>
+        <input type="text" class="form-control" id="inputDni" name="dni" required>
       </div>
       <div class="col-md-6">
         <label for="inputBirthDate" class="form-label">Fecha de Nacimiento</label>
-        <input type="date" class="form-control" id="inputBirthDate" required>
+        <input type="date" class="form-control" id="inputBirthDate" name="fecha_nacimiento" required>
       </div>
       <div class="col-md-6">
         <label for="inputEdad" class="form-label">Edad</label>
-        <input type="edad" class="form-control" id="inputEdad" required>
+        <input type="number" class="form-control" id="inputEdad" name="edad" required>
       </div>
       <div class="col-md-6">
         <label for="inputCiudadania" class="form-label">Ciudadanía</label>
-        <input type="text" class="form-control" id="inputCiudadania" required>
+        <input type="text" class="form-control" id="inputCiudadania" name="ciudadania" required>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Correo electrónico</label>
-        <input type="text" class="form-control" id="inputEmail" required>
+        <label for="inputEmail" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" required>
       </div>
-      <hr class="my-4" style="border: 1px solid #ccc;">
-      <h2 class="mb-4" style="color: gold;">Concurso CILD</h2>
+
+      <hr class="my-4">
+      <h2 class="mb-4 text-warning">Concurso CILD</h2>
 
       <div class="col-md-6">
         <label for="inputModalidad" class="form-label">Modalidad en la que se inscribe</label>
-        <input type="text" class="form-control" id="inputModalidad" required>
+        <input type="text" class="form-control" id="inputModalidad" name="modalidad" required>
       </div>
       <div class="col-md-6">
         <label for="inputObra" class="form-label">Nombre de la coreografía / Variación / Obra</label>
-        <input type="text" class="form-control" id="inputObra" required>
+        <input type="text" class="form-control" id="inputObra" name="obra" required>
       </div>
       <div class="col-md-6">
         <label for="inputCategoria" class="form-label">Categoría</label>
-        <select class="form-control" id="inputCategoria" required>
+        <select class="form-control" id="inputCategoria" name="categoria" required>
           <option value="" disabled selected>Seleccionar</option>
           <option value="solista">Solista</option>
           <option value="duo">Dúo</option>
@@ -124,10 +127,11 @@
       </div>
       <div class="col-md-6">
         <label for="inputCantidad" class="form-label">Cantidad de integrantes del grupo</label>
-        <input type="text" class="form-control" id="inputCantidad" required>
+        <input type="number" class="form-control" id="inputCantidad" name="cantidad_integrantes" required>
       </div>
+
       <div class="col-md-12">
-        <label for="inputIntegrantes" class="form-label">Integrantes del Grupo:</label>
+        <label class="form-label">Integrantes del Grupo</label>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -138,82 +142,41 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Fila 1 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_1" required></td>
-              <td><input type="number" class="form-control" name="edad_1" required></td>
-              <td><input type="text" class="form-control" name="responsable_1"></td>
-              <td><input type="text" class="form-control" name="autorizacion_1"></td>
-            </tr>
-            <!-- Fila 2 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_2" required></td>
-              <td><input type="number" class="form-control" name="edad_2" required></td>
-              <td><input type="text" class="form-control" name="responsable_2"></td>
-              <td><input type="text" class="form-control" name="autorizacion_2"></td>
-            </tr>
-            <!-- Fila 3 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_3" required></td>
-              <td><input type="number" class="form-control" name="edad_3" required></td>
-              <td><input type="text" class="form-control" name="responsable_3"></td>
-              <td><input type="text" class="form-control" name="autorizacion_3"></td>
-            </tr>
-            <!-- Fila 4 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_4" required></td>
-              <td><input type="number" class="form-control" name="edad_4" required></td>
-              <td><input type="text" class="form-control" name="responsable_4"></td>
-              <td><input type="text" class="form-control" name="autorizacion_4"></td>
-            </tr>
-            <!-- Fila 5 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_5" required></td>
-              <td><input type="number" class="form-control" name="edad_5" required></td>
-              <td><input type="text" class="form-control" name="responsable_5"></td>
-              <td><input type="text" class="form-control" name="autorizacion_5"></td>
-            </tr>
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_6" required></td>
-              <td><input type="number" class="form-control" name="edad_6" required></td>
-              <td><input type="text" class="form-control" name="responsable_6"></td>
-              <td><input type="text" class="form-control" name="autorizacion_6"></td>
-            </tr>
-            <!-- Fila 2 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_7" required></td>
-              <td><input type="number" class="form-control" name="edad_7" required></td>
-              <td><input type="text" class="form-control" name="responsable_7"></td>
-              <td><input type="text" class="form-control" name="autorizacion_7"></td>
-            </tr>
-            <!-- Fila 3 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_8" required></td>
-              <td><input type="number" class="form-control" name="edad_8" required></td>
-              <td><input type="text" class="form-control" name="responsable_8"></td>
-              <td><input type="text" class="form-control" name="autorizacion_8"></td>
-            </tr>
-            <!-- Fila 4 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_9" required></td>
-              <td><input type="number" class="form-control" name="edad_9" required></td>
-              <td><input type="text" class="form-control" name="responsable_9"></td>
-              <td><input type="text" class="form-control" name="autorizacion_9"></td>
-            </tr>
-            <!-- Fila 5 -->
-            <tr>
-              <td><input type="text" class="form-control" name="nombre_10" required></td>
-              <td><input type="number" class="form-control" name="edad_10" required></td>
-              <td><input type="text" class="form-control" name="responsable_10"></td>
-              <td><input type="text" class="form-control" name="autorizacion_10"></td>
-            </tr>
-            <!-- Puedes agregar más filas según lo necesites -->
+            <?php for ($i = 1; $i <= 10; $i++) : ?>
+              <tr>
+                <td><input type="text" class="form-control" name="nombre_<?php echo $i; ?>"></td>
+                <td><input type="number" class="form-control" name="edad_<?php echo $i; ?>"></td>
+                <td><input type="text" class="form-control" name="responsable_<?php echo $i; ?>"></td>
+                <td><input type="text" class="form-control" name="autorizacion_<?php echo $i; ?>"></td>
+              </tr>
+            <?php endfor; ?>
           </tbody>
         </table>
       </div>
+
+      <hr class="my-4">
+      <h2 class="mb-4 text-warning">Documentación requerida</h2>
+
+      <div class="col-md-6">
+        <label for="inputFile1" class="form-label">Autorización para menores (PDF)</label>
+        <input type="file" class="form-control" id="inputFile1" name="file_autorizacion" accept=".pdf">
+      </div>
+      <div class="col-md-6">
+        <label for="inputFile2" class="form-label">Exención de responsabilidad (PDF)</label>
+        <input type="file" class="form-control" id="inputFile2" name="file_responsabilidad" accept=".pdf">
+      </div>
+      <div class="col-md-6">
+        <label for="inputFile3" class="form-label">Comprobante de pago (PDF)</label>
+        <input type="file" class="form-control" id="inputFile3" name="file_pago" accept=".pdf" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputFile4" class="form-label">Archivo MP3 (Opcional)</label>
+        <input type="file" class="form-control" id="inputFile4" name="file_musica" accept=".mp3">
+      </div>
+
       <div class="col-md-6">
         <label for="inputDivision" class="form-label">División</label>
-        <select class="form-control" id="inputDivision" required>
+        <select class="form-control" id="inputDivision" name="division" required>
           <option value="" disabled selected>Seleccionar</option>
           <option value="infantil">Infantil</option>
           <option value="joveneso">Jóvenes</option>
@@ -224,8 +187,10 @@
         </select>
       </div>
 
+      <hr class="my-4">
+      <h2 class="mb-4 text-warning">Coreografía</h2>
       <div class="col-md-12">
-        <label for="inputCoreografia" class="form-label">¿Compite en Coreografía?</label>
+        <label class="form-label">¿Compite en Coreografía?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" id="inputCoreografiaSi" name="coreografia" value="si" required>
           <label class="form-check-label" for="inputCoreografiaSi">Sí</label>
@@ -235,43 +200,13 @@
           <label class="form-check-label" for="inputCoreografiaNo">No</label>
         </div>
       </div>
-      <div class="col-md-6">
-        <label for="inputWebsite" class="form-label">Coreógrafo(En caso afirmativo)</label>
-        <input type="url" class="form-control" id="inputWebsite">
-      </div>
-      <hr class="my-4" style="border: 1px solid #ccc;">
-      <h2 class="mb-4" style="color: gold;">Autorización del participante menor</h2>
-      <p>En el caso de un menor, deberá descargar el Formulario de autorización para menores de 18 años, completarlo y adjuntarlo a continuación:</p>
-      <div class="col-md-6">
-        <label for="inputFile1" class="form-label">Subir archivo PDF</label>
-        <input type="file" class="form-control" id="inputFile1" accept="application/pdf" name="file1">
-      </div>
-      <hr class="my-4" style="border: 1px solid #ccc;">
-      <h2 class="mb-4" style="color: gold;">Exención de responsabilidad y divulgación</h2>
-      <p>En el caso de un menor, deberá descargar el Formulario de exención de responsabilidad, completarlo y adjuntarlo a continuación:</p>
-      <div class="col-md-6">
-        <label for="inputFile2" class="form-label">Subir archivo PDF</label>
-        <input type="file" class="form-control" id="inputFile2" accept="application/pdf" name="file2">
-      </div>
-      <hr class="my-4" style="border: 1px solid #ccc;">
-      <h2 class="mb-4" style="color: gold;">Comprobante de pago</h2>
-      <p>Adjuntar copia del comprobante del depósito o transferencia de la inscripción al concurso:</p>
-      <div class="col-md-6">
-        <label for="inputFile3" class="form-label">Subir archivo PDF</label>
-        <input type="file" class="form-control" id="inputFile3" accept="application/pdf" name="file3">
-      </div>
-      <hr class="my-4" style="border: 1px solid #ccc;">
-      <h2 class="mb-4" style="color: gold;">Adjuntar MP3</h2>
-      <p>Adjuntar archivo mp3:</p>
-      <div class="col-md-6">
-        <label for="inputFile4" class="form-label">Subir archivo MP3</label>
-        <input type="file" class="form-control" id="inputFile4" accept=".mp3" name="file4">
-      </div>
-      <div class="col-12">
-        <button type="button" id="generatePdf" class="btn btn-primary">Enviar formulario</button>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary px-5">Enviar Formulario</button>
       </div>
     </form>
   </section>
+
 </main>
 
 <?php include_once 'includes/inc.footer.php'; ?>
