@@ -3,7 +3,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 include_once 'includes/inc.config.php';
-header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Capturar datos generales del formulario
@@ -17,29 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $edad = $_POST['edad'] ?? 'No especificado';
     $ciudadania = $_POST['ciudadania'] ?? 'No especificado';
     
-    // Verificar si ya existe una inscripción con este DNI o email para este formulario específico
-    $registros_file = 'uploads/registros.json';
-    $registros = [];
-    if (file_exists($registros_file)) {
-        $registros = json_decode(file_get_contents($registros_file), true) ?? [];
-    }
-    
-    $duplicado = false;
-    foreach ($registros as $registro) {
-        if ($registro['formulario_origen'] === $formulario_origen &&
-            ($registro['dni'] === $dni || $registro['email'] === $email)) {
-            $duplicado = true;
-            break;
-        }
-    }
-    
-    if ($duplicado) {
-        echo json_encode([
-            'success' => false,
-            'message' => "Ya existe una inscripción para $formulario_origen con este DNI o correo electrónico."
-        ]);
-        exit;
-    }
 
     // Inicializar variables específicas de cada formulario
     $categoria = $division = $curso = $modalidad = $obra = $cantidad_integrantes = '';
@@ -202,37 +178,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Enviar el correo
         $mail->send();
 
-        // Después de enviar el correo exitosamente
-        $nuevo_registro = [
-            'formulario_origen' => $formulario_origen,
-            'nombre' => $nombre,
-            'apellido' => $apellido,
-            'email' => $email,
-            'telefono' => $telefono,
-            'dni' => $dni,
-            'fecha_inscripcion' => date('Y-m-d H:i:s')
-        ];
-
-        $registros[] = $nuevo_registro;
-        file_put_contents($registros_file, json_encode($registros, JSON_PRETTY_PRINT));
-
-        echo json_encode([
-            'success' => true,
-            'message' => 'Tu inscripción ha sido enviada correctamente.',
-            'redirect' => 'index.php'
-        ]);
+        // Enviar la respuesta correctamente con SweetAlert
+        echo "<!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Formulario Enviado</title>
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: '¡Formulario enviado!',
+                    text: 'Tu inscripción ha sido enviada correctamente.',
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                }).then(() => {
+                    window.location.href = 'index.php';
+                });
+            </script>
+        </body>
+        </html>";
 
     } catch (Exception $e) {
-        error_log("Error en el procesamiento del formulario: " . $e->getMessage());
-        echo json_encode([
-            'success' => false,
-            'message' => "Ha ocurrido un error al procesar tu inscripción. Por favor, intenta nuevamente."
-        ]);
+        echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }
+
+    // Limpiar archivos temporales
+    unlink($pdf_file);
 } else {
-    echo json_encode([
-        'success' => false,
-        'message' => 'Método de acceso no permitido.'
-    ]);
+    echo "Acceso no permitido.";
 }
 ?>
