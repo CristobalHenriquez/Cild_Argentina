@@ -13,27 +13,27 @@
 
       <div class="image-grid" data-aos="zoom-in" data-aos-delay="300">
         <div class="grid-item item-1">
-          <img src="assets/img/opc3.jpg" alt="Office Interior" class="img-fluid">
+          <img src="assets/img/opc3.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
 
         <div class="grid-item item-2">
-          <img src="assets/img/img3.png" alt="Business Meeting" class="img-fluid">
+          <img src="assets/img/home1.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
 
         <div class="grid-item item-3">
-          <img src="assets/img/opc1.jpg" alt="Digital Workspace" class="img-fluid">
+          <img src="assets/img/Home0.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
 
         <div class="grid-item item-4">
-          <img src="assets/img/nenas.jpg" alt="Business Professional" class="img-fluid">
+          <img src="assets/img/nenas.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
 
         <div class="grid-item item-5">
-          <img src="assets/img/img5.png" alt="Modern Office" class="img-fluid">
+          <img src="assets/img/home3.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
 
         <div class="grid-item item-6">
-          <img src="assets/img/SL.jpg" alt="Team Collaboration" class="img-fluid">
+          <img src="assets/img/SL1.jpg" alt="Cild Argentina 2025" class="img-fluid">
         </div>
       </div>
 

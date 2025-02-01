@@ -77,7 +77,6 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <!-- Cargar Vue desde un CDN -->
 <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.min.js"></script>
-
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
 <a href="https://wa.me/5493764350290?text=Hola%20me%20gustaría%20más%20información%20sobre..." class="whatsapp-float" target="_blank">

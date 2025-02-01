@@ -138,21 +138,22 @@
                 <h2 class="modal-title" id="ventana6Label">Daniel Bartra Encina</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
+                <img src="assets/img/jurados/daniel_bartra.jpg" alt="Daniel Bartra" class="img-fluid mb-3 rounded-circle" width="150">
                 <p>
                     Daniel Bartra es un maestro, coreógrafo y director con vasta trayectoria a nivel nacional e internacional en el área artística y docente.
                 </p>
                 <p>
-                    Creó el Método Bartra de Acondicionamiento Biomecánico Funcional, aplicado en el Seminario de Danzas Clásicas Nora Irinova del Teatro del Libertador General San Martín.
+                    Creó el <strong>Método Bartra de Acondicionamiento Biomecánico Funcional</strong>, aplicado en el Seminario de Danzas Clásicas Nora Irinova del Teatro del Libertador General San Martín.
                 </p>
                 <p>
                     Formado en la Escuela Municipal de Danza Clásica de Corrientes, se perfeccionó con reconocidos maestros en diversas disciplinas. Integró el Ballet de Cámara de Corrientes y el Modern Jazz Ballet en Buenos Aires, siendo contratado por el Teatro Colón.
                 </p>
                 <p>
-                    Participó en televisión para Ideas del Sur en el programa "Soñando por cantar". Ha sido docente en diversas instituciones, como la Universidad Nacional de las Artes y la Fundación Julio Bocca. Además, dicta cursos y charlas en el país y el exterior, y actúa como jurado en certámenes internacionales.
+                    Participó en televisión para Ideas del Sur en el programa <strong>"Soñando por cantar"</strong>. Ha sido docente en diversas instituciones, como la Universidad Nacional de las Artes y la Fundación Julio Bocca. Además, dicta cursos y charlas en el país y el exterior, y actúa como jurado en certámenes internacionales.
                 </p>
                 <p>
-                    Representó a Argentina en eventos realizados en Ecuador, Libia y Polonia. Actualmente, está radicado en Córdoba, donde continúa con su labor docente y la difusión del Método Bartra, recientemente patentado.
+                    Representó a Argentina en eventos realizados en Ecuador, Libia y Polonia. Actualmente, está radicado en Córdoba, donde continúa con su labor docente y la difusión del <strong>Método Bartra</strong>, recientemente patentado.
                 </p>
             </div>
             <div class="modal-footer">
@@ -170,21 +171,22 @@
                 <h2 class="modal-title" id="ventana7Label">Alexander Nikolaievich Ananiev</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
+                <img src="assets/img/jurados/alexander_nikolaievich.jpg" alt="Alexander Nikolaievich" class="img-fluid mb-3 rounded-circle" width="150">
                 <p>
                     Alexander trabajó como bailarín en compañías rusas como Kirov, Bolshoi y Ensamble P.O.V de Cámara de Moscú, abordando repertorios contemporáneos y folclóricos.
                 </p>
                 <p>
-                    En 1994 llegó a Argentina, alternando roles de bailarín, coreógrafo y maestro en el Instituto Superior de Arte y el Ballet Estable de San Juan. Posteriormente, se desempeñó como ensayista, bailarín solista y coreógrafo.
+                    En 1994 llegó a Argentina, alternando roles de <strong>bailarín, coreógrafo y maestro</strong> en el Instituto Superior de Arte y el Ballet Estable de San Juan. Posteriormente, se desempeñó como ensayista, bailarín solista y coreógrafo.
                 </p>
                 <p>
-                    En el Teatro Colón dictó clases y fue maestro ensayista. Además, participó como jurado en certámenes internacionales.
+                    En el <strong>Teatro Colón</strong> dictó clases y fue maestro ensayista. Además, participó como jurado en certámenes internacionales.
                 </p>
                 <p>
                     De 2009 a 2014, fue maestro de ballet en el Centro del Conocimiento y la Academia de Ballet de Moscú en Posadas, Misiones.
                 </p>
                 <p>
-                    Desde 2015, Alexander es maestro y ensayista del Ballet Oficial de Córdoba. También se desempeña como coreógrafo y repositor, además de ser maestro en el Seminario de Danzas Nora Irinova del Teatro del Libertador San Martín en Córdoba.
+                    Desde 2015, Alexander es <strong>maestro y ensayista del Ballet Oficial de Córdoba</strong>. También se desempeña como coreógrafo y repositor, además de ser maestro en el Seminario de Danzas Nora Irinova del Teatro del Libertador San Martín en Córdoba.
                 </p>
             </div>
             <div class="modal-footer">
@@ -202,24 +204,25 @@
                 <h2 class="modal-title" id="ventana8Label">Alba Serra</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
+                <img src="assets/img/jurados/alba_serra.jpg" alt="Alba Serra" class="img-fluid mb-3 rounded-circle" width="150">
                 <p>
                     Alba comenzó sus estudios a los 5 años en Junín con la profesora Sara Cedrola. A los 16 años, se graduó del Instituto Superior de Danzas de Junín.
                 </p>
                 <p>
-                    Practicó gimnasia artística desde los 5 hasta los 17 años en el Club Junín bajo la guía del profesor Cary Mollier. A los 15 años, ganó el concurso Latinoamericano de Ballet, lo que le permitió permanecer en México durante 48 días.
+                    Practicó <strong>gimnasia artística</strong> desde los 5 hasta los 17 años en el Club Junín bajo la guía del profesor Cary Mollier. A los 15 años, ganó el concurso Latinoamericano de Ballet, lo que le permitió permanecer en México durante 48 días.
                 </p>
                 <p>
-                    A los 17 años, se mudó a Capital Federal, donde integró el Ballet de la Ciudad de Buenos Aires, el Ballet del Mercosur y Neoclásico. En 1996, ganó el concurso Todo Ballet y pasó un año en Pro Danza de Cuba.
+                    A los 17 años, se mudó a <strong>Capital Federal</strong>, donde integró el Ballet de la Ciudad de Buenos Aires, el Ballet del Mercosur y Neoclásico. En 1996, ganó el concurso Todo Ballet y pasó un año en Pro Danza de Cuba.
                 </p>
                 <p>
-                    Entre 2001 y 2003, Alba bailó en diversas compañías en Estados Unidos, realizando giras internacionales. En 2007, participó en las aperturas de productos de L'Oreal en eventos destacados como La Rural y el Luna Park. También trabajó en óperas y ballets en el Teatro Colón, obteniendo múltiples medallas en concursos.
+                    Entre 2001 y 2003, Alba bailó en diversas compañías en Estados Unidos, realizando giras internacionales. En 2007, participó en las aperturas de productos de <strong>L'Oreal</strong> en eventos destacados como La Rural y el Luna Park. También trabajó en óperas y ballets en el <strong>Teatro Colón</strong>, obteniendo múltiples medallas en concursos.
                 </p>
                 <p>
-                    Desde 2009, Alba es maestra y ensayista, dirigiendo su propio estudio de ballet y formando a un grupo de jóvenes bailarines talentosos. En 2019, su alumna Romina García Vázquez ganó el concurso Paloma Herrera y recibió becas para el Prix de Lausanne. Ese mismo año, Alba fue invitada a impartir clases en Acámbaro, México.
+                    Desde 2009, Alba es <strong>maestra y ensayista</strong>, dirigiendo su propio estudio de ballet y formando a un grupo de jóvenes bailarines talentosos. En 2019, su alumna Romina García Vázquez ganó el concurso Paloma Herrera y recibió becas para el Prix de Lausanne. Ese mismo año, Alba fue invitada a impartir clases en Acámbaro, México.
                 </p>
                 <p>
-                    Sus funciones combinan clásicos de repertorio y obras neoclásicas de su propia creación.
+                    Sus funciones combinan <strong>clásicos de repertorio</strong> y obras neoclásicas de su propia creación.
                 </p>
             </div>
             <div class="modal-footer">

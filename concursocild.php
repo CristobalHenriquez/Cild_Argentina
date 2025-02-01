@@ -103,7 +103,54 @@
         <label for="inputEmail" class="form-label">Correo Electrónico</label>
         <input type="email" class="form-control" id="inputEmail" name="email" required>
       </div>
-
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+          <label for="inputTelefono" class="form-label">Teléfono / WhatsApp</label>
+          <div class="input-group">
+            <input type="tel"
+              class="form-control"
+              id="inputTelefono"
+              name="telefono"
+              placeholder="+54 9 11 1234-5678"
+              pattern="\+[0-9]{1,3}\s?[0-9]{1,4}\s?[0-9]{4,14}"
+              title="Por favor, ingresa el número en formato internacional: +[código de país] [código de área] [número]"
+              required>
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#telefonoInfoModal">
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </div>
+          <small class="form-text text-muted d-block mt-2">
+            Formato: +[país] [área] [número]<br>
+            Ej. Argentina: +54 9 11 1234-5678
+          </small>
+        </div>
+      </div>
+      <!-- Modal con información adicional -->
+      <div class="modal fade" id="telefonoInfoModal" tabindex="-1" aria-labelledby="telefonoInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="telefonoInfoModalLabel">Cómo ingresar tu número de teléfono</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Para ingresar correctamente tu número de teléfono o WhatsApp, sigue estos pasos:</p>
+              <ol>
+                <li>Comienza con el signo "+" seguido del código de país (por ejemplo, +54 para Argentina).</li>
+                <li>Si es un número móvil en Argentina, agrega un 9 después del código de país.</li>
+                <li>Luego, ingresa el código de área sin el 0 inicial.</li>
+                <li>Finalmente, ingresa el número local sin el 15 inicial (para números móviles).</li>
+              </ol>
+              <p>Ejemplos:</p>
+              <ul>
+                <li>Número de Buenos Aires: +54 9 11 1234-5678</li>
+                <li>Número de Córdoba: +54 9 351 123-4567</li>
+                <li>Número de Rosario: +54 9 341 234-5678</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <hr class="my-4">
       <h2 class="mb-4 text-warning">Concurso CILD</h2>
 
