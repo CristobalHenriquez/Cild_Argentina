@@ -1,3 +1,11 @@
 [
-    
+    {
+        "formulario_origen": "seminario",
+        "nombre": "CRISTOBAL",
+        "apellido": "HENRIQUEZ",
+        "email": "cristobalhb@live.com",
+        "telefono": "+543415071162",
+        "dni": "94778858",
+        "fecha_inscripcion": "2025-02-01 22:54:27"
+    }
 ]

@@ -5,7 +5,7 @@
   <section id="seminario" class="container py-5">
     <h1>Seminario</h1>
     <p>En esta edición del CILD® 2025, se realiza un Seminario de Danza enmarcado dentro del Concurso y abierto a todos los bailarines que deseen realizar el mismo, sean o no participantes del CILD®.
-      Como destacable, se dictarán clases de danza clásica con los maestros Alexandre Ananiev y Alba Serra.
+      Como destacable, se dictarán clases de danza clásica con los maestros Alexandre Ananiev, Alba Serra y Daniel Bartra.
     </p>
   </section>
 
@@ -104,24 +104,38 @@
       <!-- Cursos -->
       <fieldset class="border p-3 mt-4">
         <legend class="w-auto px-2" style="color: gold;">Cursos</legend>
+        <p>Selecciona los cursos a los que deseas inscribirte:</p>
+
         <div class="mb-3">
-          <h4>Jueves 07 de septiembre</h4>
+          <h4>Viernes 3/10</h4>
+          <p><strong>Clases Grand Prix (obligatorias para participantes Grand Prix):</strong></p>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="input7septiembre" name="curso" value="clásico-avanzado" required>
-            <label class="form-check-label" for="input7septiembre">14:00 a 15:30 hs - Clásico Avanzado con el maestro Alexander Ananiev.</label>
+            <input type="checkbox" class="form-check-input" id="curso1" name="cursos[]" value="GP-clasico-avanzado">
+            <label class="form-check-label" for="curso1">13:00 a 14:30 - Clásico avanzado con el maestro Alexander Ananiev</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="curso2" name="cursos[]" value="GP-clasico-intermedio">
+            <label class="form-check-label" for="curso2">14:30 a 16:00 - Clásico intermedio con la maestra Alba Serra</label>
           </div>
         </div>
+
         <div class="mb-3">
-          <h4>Viernes 08 de septiembre</h4>
+          <p><strong>Para todos los participantes:</strong></p>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="inputLorena" name="curso" value="clásico-intermedio" required>
-            <label class="form-check-label" for="inputLorena">09:00 a 10:30 hs - Clásico Intermedio con la maestra Lorena Bello.</label>
+            <input type="checkbox" class="form-check-input" id="curso3" name="cursos[]" value="clasico-avanzado">
+            <label class="form-check-label" for="curso3">16:00 a 17:30 - Clásico avanzado con el maestro Alexander Ananiev</label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="inputJose" name="curso" value="clásico-avanzado-jose" required>
-            <label class="form-check-label" for="inputJose">10:30 a 12:00 hs - Clásico Avanzado con el maestro José María Vázquez.</label>
+            <input type="checkbox" class="form-check-input" id="curso4" name="cursos[]" value="clasico-intermedio">
+            <label class="form-check-label" for="curso4">17:30 a 19:00 - Clásico intermedio con la maestra Alba Serra</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="curso5" name="cursos[]" value="jazz">
+            <label class="form-check-label" for="curso5">16:00 a 17:30 - Clase jazz con el maestro Daniel Bartra (en escenario)</label>
           </div>
         </div>
+
+        <p class="mt-3"><small>Nota: Los maestros que traen a sus alumnas a los cursos pueden presenciar la clase.</small></p>
       </fieldset>
 
       <!-- Comprobante de pago -->
@@ -149,9 +163,32 @@
 $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
-        
+
+        // Validación básica del formulario
+        const requiredFields = $(this).find('[required]');
+        let isValid = true;
+
+        requiredFields.each(function() {
+            if (!$(this).val()) {
+                isValid = false;
+                $(this).addClass('error');
+            } else {
+                $(this).removeClass('error');
+            }
+        });
+
+        if (!isValid) {
+            Swal.fire({
+                title: 'Error',
+                text: 'Por favor, completa todos los campos requeridos',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            });
+            return;
+        }
+
         // Mostrar indicador de carga
-        Swal.fire({
+        const loadingSwal = Swal.fire({
             title: 'Procesando...',
             text: 'Por favor espera mientras procesamos tu inscripción',
             allowOutsideClick: false,
@@ -171,52 +208,106 @@ $(document).ready(function() {
             data: formData,
             processData: false,
             contentType: false,
+            dataType: 'json',
             success: function(response) {
-                try {
-                    if (typeof response === 'string') {
-                        response = JSON.parse(response);
-                    }
+                console.log('Respuesta recibida (raw):', response);
+                console.log('Respuesta recibida (parsed):', JSON.parse(JSON.stringify(response)));
+                console.log('Respuesta recibida:', response);
+                console.log('Tipo de respuesta:', typeof response);
+                console.log('¿Es un objeto?', response instanceof Object);
+                console.log('¿Tiene la propiedad success?', 'success' in response);
 
-                    if (response.success) {
+                // Cerrar el diálogo de carga
+                loadingSwal.close();
+
+                if (response && typeof response === 'object') {
+                    console.log('Entrando en la condición principal');
+                    if (response.success === true) {
+                        console.log('Condición de éxito detectada');
                         Swal.fire({
                             title: '¡Éxito!',
-                            text: response.message,
+                            text: response.message || 'Tu inscripción ha sido enviada correctamente.',
                             icon: 'success',
                             confirmButtonText: 'Aceptar'
                         }).then((result) => {
-                            if (result.isConfirmed) {
-                                window.location.href = 'index.php';
+                            if (result.isConfirmed && response.redirect) {
+                                window.location.href = response.redirect;
                             }
                         });
                     } else {
+                        console.log('Condición de error detectada');
+                        console.log('Valor de response.success:', response.success);
                         Swal.fire({
                             title: 'Error',
-                            text: response.message,
+                            text: response.message || 'Ha ocurrido un error al procesar la inscripción',
                             icon: 'error',
                             confirmButtonText: 'Aceptar'
                         });
                     }
-                } catch (e) {
-                    console.error('Error al procesar la respuesta:', e);
+                } else {
+                    console.log('La respuesta no es un objeto válido');
+                    console.error('Respuesta inesperada del servidor:', response);
                     Swal.fire({
                         title: 'Error',
-                        text: 'Ha ocurrido un error al procesar la respuesta del servidor',
+                        text: 'Ha ocurrido un error inesperado. Por favor, intenta nuevamente.',
                         icon: 'error',
                         confirmButtonText: 'Aceptar'
                     });
                 }
             },
             error: function(xhr, status, error) {
-                console.error('Error en la solicitud:', error);
+                console.error('Error en la solicitud AJAX:', {
+                    status: status,
+                    error: error,
+                    responseText: xhr.responseText
+                });
+
+                let errorMessage = 'Ha ocurrido un error al enviar el formulario. Por favor, intenta nuevamente.';
+
+                // Intentar parsear la respuesta como JSON
+                try {
+                    const jsonResponse = JSON.parse(xhr.responseText);
+                    if (jsonResponse && jsonResponse.message) {
+                        errorMessage = jsonResponse.message;
+                    }
+                } catch (e) {
+                    console.error('No se pudo parsear la respuesta como JSON:', e);
+                }
+
+                // Cerrar el diálogo de carga
+                loadingSwal.close();
+
                 Swal.fire({
                     title: 'Error',
-                    text: 'Ha ocurrido un error al enviar el formulario',
+                    text: errorMessage,
                     icon: 'error',
                     confirmButtonText: 'Aceptar'
                 });
             }
         });
     });
+
+    // Agregar estilos para campos con error
+    $('<style>')
+        .text('.error { border-color: red !important; }')
+        .appendTo('head');
 });
 </script>
+<script>
+    // Función para imprimir la respuesta del servidor en la consola
+    function printServerResponse() {
+        fetch('process_form.php')
+            .then(response => response.text())
+            .then(data => {
+                console.log('Respuesta del servidor (GET):', data);
+            })
+            .catch(error => {
+                console.error('Error al obtener la respuesta del servidor:', error);
+            });
+    }
+
+    // Llamar a la función cuando se carga la página
+    printServerResponse();
+</script>
 <?php include_once 'includes/inc.footer.php'; ?>
+
