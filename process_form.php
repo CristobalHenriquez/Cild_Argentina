@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -9,7 +10,8 @@ header('Content-Type: application/json; charset=UTF-8');
 mb_internal_encoding('UTF-8');
 
 // Función para logging
-function logError($mensaje) {
+function logError($mensaje)
+{
     $logFile = __DIR__ . '/error_log.txt';
     $timestamp = date('Y-m-d H:i:s');
     file_put_contents($logFile, "[$timestamp] $mensaje\n", FILE_APPEND);
@@ -44,8 +46,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $duplicado = false;
         foreach ($registros as $registro) {
-            if ($registro['formulario_origen'] === $formulario_origen &&
-                ($registro['dni'] === $dni || $registro['email'] === $email)) {
+            if (
+                $registro['formulario_origen'] === $formulario_origen &&
+                ($registro['dni'] === $dni || $registro['email'] === $email)
+            ) {
                 $duplicado = true;
                 break;
             }
@@ -209,20 +213,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Cuerpo del correo con datos estructurados
         $mail_body = "Se ha recibido una nueva inscripción desde el formulario de $formulario_origen.\n\n"
-                   . "Nombre: $nombre $apellido\n"
-                   . "Email: $email\n"
-                   . "Teléfono / WhatsApp: $telefono\n"
-                   . "DNI: $dni\n"
-                   . "Fecha de Nacimiento: $fecha_nacimiento\n"
-                   . "Edad: $edad\n"
-                   . "Ciudadanía: $ciudadania\n\n"
-                   . "Cursos seleccionados:\n";
+            . "Nombre: $nombre $apellido\n"
+            . "Email: $email\n"
+            . "Teléfono / WhatsApp: $telefono\n"
+            . "DNI: $dni\n"
+            . "Fecha de Nacimiento: $fecha_nacimiento\n"
+            . "Edad: $edad\n"
+            . "Ciudadanía: $ciudadania\n"
+            . "División: $division\n\n"  // <--- Se agregó esta línea para incluir la división
+            . "Cursos seleccionados:\n";
 
         foreach ($cursos_seleccionados as $curso) {
             if (isset($cursos_descripcion[$curso])) {
                 $mail_body .= "- " . $cursos_descripcion[$curso] . "\n";
             }
         }
+
 
         $mail->Body = $mail_body;
         logError("Cuerpo del correo configurado: " . substr($mail_body, 0, 100) . "...");
@@ -286,7 +292,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Content-Type: application/json');
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         exit;
-
     } catch (Exception $e) {
         logError("ERROR: " . $e->getMessage());
         logError("Línea: " . $e->getLine());
@@ -315,4 +320,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo json_encode($response);
     exit;
 }
-

@@ -44,6 +44,7 @@
                     <li>División Senior: 18 – 26 años</li>
                     <li>División Máster: 27 años en adelante</li>
                 </ul>
+
                 <p><strong>Tríos y Grupos:</strong></p>
                 <ul>
                     <li>División Infantil: 09 - 11 años</li>
@@ -55,26 +56,36 @@
                 <h4>Modalidades Clásico Libre, Jazz, Neoclásico, Danza de Carácter, Street Dance, Hip-Hop, Tango, Folklore Argentino y Folklore Internacional</h4>
                 <p><strong>Estilos Solistas y Dúos:</strong></p>
                 <ul>
+                    <li>División Baby: 4 hasta 07 años</li>
                     <li>División Infantil: hasta 09 años</li>
                     <li>División Estudiantes: 10 – 14 años</li>
                     <li>División Junior: 15 – 17 años</li>
                     <li>División Senior: 18 – 26 años</li>
                     <li>División Máster: 27 años en adelante</li>
                 </ul>
+
                 <p><strong>Estilos Tríos y Grupos:</strong></p>
                 <ul>
+                    <li>División Baby: 4 a 7 años</li>
                     <li>División Infantil: hasta 11 años</li>
                     <li>División Junior: 12 – 17 años</li>
                     <li>División Senior: 18 años en adelante</li>
                 </ul>
 
                 <h4>Tiempo de Presentaciones</h4>
+                <p><strong>Solistas, dúos, tríos:</strong></p>
                 <ul>
-                    <li>Solistas, dúos, tríos: División infantil: 1' 30" máximo</li>
-                    <li>División estudiantes: 2' máximo</li>
-                    <li>División junior, senior y máster: 3' máximo</li>
-                    <li>Grupos: Infantil: 3' máximo</li>
-                    <li>Junior y senior: 4' máximo</li>
+                    <li>División Baby: 1 min máximo</li>
+                    <li>División Infantil: 1' 30" máximo</li>
+                    <li>División Estudiantes: 2' máximo</li>
+                    <li>División Junior, Senior y Máster: 3' máximo</li>
+                </ul>
+
+                <p><strong>Grupos:</strong></p>
+                <ul>
+                    <li>División Baby: 1' 30" máximo</li>
+                    <li>División Infantil: 3' máximo</li>
+                    <li>División Junior y Senior: 4' máximo</li>
                 </ul>
             </div>
             <div class="modal-footer">
@@ -322,14 +333,17 @@
 
                 <h3>Becas disponibles:</h3>
                 <ul>
-                    <li>Cuban Classical Ballet School (Miami, EEUU)</li>
-                    <li>Lizt Alfonso Dance Cuba, Danza Española – Danza Fusión (Habana, Cuba)</li>
-                    <li>Ajkun Ballet Theatre (Nueva York, EEUU)</li>
-                    <li>Estudio Alba Serra (Capital Federal, Argentina)</li>
-                    <li>Escuela Fundación Julio Bocca (Capital Federal, Argentina)</li>
-                    <li>Barcelona Dance Center (Barcelona, España)</li>
-                    <li>Escola Adriana Assaf, Compañía Paulista (Sao Paulo, Brasil)</li>
-                    <li>Selectiva para el concurso Caraguatatuba 2026 (Estado de San Pablo, Brasil, Julio 2026)</li>
+                    <li><strong>Cuban Classical Ballet School</strong> (Miami, EEUU)</li>
+                    <li><strong>Lizt Alfonso Dance Cuba</strong>, Danza Española – Danza Fusión (Habana, Cuba)</li>
+                    <li><strong>Ajkun Ballet Theatre</strong> (Nueva York, EEUU)</li>
+                    <li><strong>Estudio Alba Serra</strong> (Capital Federal, Argentina)</li>
+                    <li><strong>Escuela Fundación Julio Bocca</strong> (Capital Federal, Argentina)</li>
+                    <li><strong>Barcelona Dance Center</strong> (Barcelona, España)</li>
+                    <li><strong>Escola Adriana Assaf</strong>, Compañía Paulista (Sao Paulo, Brasil)</li>
+                    <li><strong>Selectiva para el concurso Caraguatatuba 2026</strong> (Estado de San Pablo, Brasil, Julio 2026)</li>
+                    <li><strong>Beca de Acondicionamiento Biomecánico Funcional Método Bartra</strong>: 
+                        Intensivo de Verano 2026 con el Maestro Daniel Bartra en <strong>Danza Viva Centro de Estudios</strong> (Córdoba, Argentina).
+                    </li>
                 </ul>
                 <p><em>En breve se anunciarán más becas.</em></p>
 

@@ -398,6 +398,9 @@
                     <li><strong>Estudio Alba Serra</strong> (Capital Federal – Argentina)</li>
                     <li><strong>Escuela de Ballet Adriana Assaf</strong> (San Pablo – Brasil): Summer Class 2026 y actuación con el grupo de ballet.</li>
                     <li><strong>Barcelona Dance Center</strong> (Barcelona – España)</li>
+                    <li><strong>Beca de Acondicionamiento Biomecánico Funcional Método Bartra</strong>: 
+                        Intensivo de Verano 2026 con el Maestro Daniel Bartra en <strong>Danza Viva Centro de Estudios</strong> (Córdoba - Argentina).
+                    </li>
                 </ul>
 
                 <p>Los premiados son seleccionados para participar del <strong>Miami International Ballet Competition 2026</strong> (Miami - EEUU).</p>
@@ -408,6 +411,5 @@
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
-
     </div>
 </div>

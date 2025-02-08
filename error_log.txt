@@ -1,2 +1,79 @@
 [2025-02-03 01:42:40] === Inicio del procesamiento ===
 [2025-02-03 01:42:43] === Inicio del procesamiento ===
+[2025-02-08 16:30:40] === Inicio del procesamiento ===
+[2025-02-08 16:30:40] Datos del formulario capturados. Origen: concursocild
+[2025-02-08 16:30:40] Generando PDF para concursocild
+[2025-02-08 16:30:40] Intentando guardar PDF en: C:\xampp\htdocs\CILD\uploads
+[2025-02-08 16:30:40] Permisos de la carpeta uploads: 0777
+[2025-02-08 16:30:40] PDF guardado exitosamente: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-30-40.pdf
+[2025-02-08 16:30:40] Configuración SMTP: {"host":"127.0.0.1","port":1025,"user":"noreply@cildargentina.com","to":"inscripcion@cildargentina.com"}
+[2025-02-08 16:30:40] Cuerpo del correo configurado: Se ha recibido una nueva inscripción desde el formulario de concursocild.
+
+Nombre: CRISTOBAL HENRIQ...
+[2025-02-08 16:30:40] PDF adjuntado al correo: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-30-40.pdf
+[2025-02-08 16:30:40] Archivo adjuntado al correo: CERTIFICADOS.pdf
+[2025-02-08 16:30:40] Archivo adjuntado al correo: testmp3.mp3
+[2025-02-08 16:30:40] Intentando enviar correo
+[2025-02-08 16:30:40] Correo enviado exitosamente
+[2025-02-08 16:30:40] Guardando registro en JSON
+[2025-02-08 16:30:40] Registro guardado exitosamente
+[2025-02-08 16:30:40] Tipo de respuesta: array
+[2025-02-08 16:30:40] Contenido de la respuesta: {"success":true,"message":"Tu inscripci\u00f3n ha sido enviada correctamente.","redirect":"index.php","debug":{"pdf_generated":"uploads\/formulario_concursocild_CRISTOBAL_2025-02-08_16-30-40.pdf","email_sent":true,"registro_guardado":true}}
+[2025-02-08 16:35:58] === Inicio del procesamiento ===
+[2025-02-08 16:35:58] Datos del formulario capturados. Origen: concursocild
+[2025-02-08 16:35:58] Generando PDF para concursocild
+[2025-02-08 16:35:58] Intentando guardar PDF en: C:\xampp\htdocs\CILD\uploads
+[2025-02-08 16:35:58] Permisos de la carpeta uploads: 0777
+[2025-02-08 16:35:58] PDF guardado exitosamente: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-35-58.pdf
+[2025-02-08 16:35:58] Configuración SMTP: {"host":"127.0.0.1","port":1025,"user":"noreply@cildargentina.com","to":"inscripcion@cildargentina.com"}
+[2025-02-08 16:35:58] Cuerpo del correo configurado: Se ha recibido una nueva inscripción desde el formulario de concursocild.
+
+Nombre: CRISTOBAL HENRIQ...
+[2025-02-08 16:35:58] PDF adjuntado al correo: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-35-58.pdf
+[2025-02-08 16:35:58] Archivo adjuntado al correo: CERTIFICADOS.pdf
+[2025-02-08 16:35:58] Archivo adjuntado al correo: testmp3.mp3
+[2025-02-08 16:35:58] Intentando enviar correo
+[2025-02-08 16:35:59] Correo enviado exitosamente
+[2025-02-08 16:35:59] Guardando registro en JSON
+[2025-02-08 16:35:59] Registro guardado exitosamente
+[2025-02-08 16:35:59] Tipo de respuesta: array
+[2025-02-08 16:35:59] Contenido de la respuesta: {"success":true,"message":"Tu inscripci\u00f3n ha sido enviada correctamente.","redirect":"index.php","debug":{"pdf_generated":"uploads\/formulario_concursocild_CRISTOBAL_2025-02-08_16-35-58.pdf","email_sent":true,"registro_guardado":true}}
+[2025-02-08 16:37:56] === Inicio del procesamiento ===
+[2025-02-08 16:37:56] Datos del formulario capturados. Origen: concursocild
+[2025-02-08 16:37:56] Generando PDF para concursocild
+[2025-02-08 16:37:56] Intentando guardar PDF en: C:\xampp\htdocs\CILD\uploads
+[2025-02-08 16:37:56] Permisos de la carpeta uploads: 0777
+[2025-02-08 16:37:56] PDF guardado exitosamente: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-37-56.pdf
+[2025-02-08 16:37:56] Configuración SMTP: {"host":"127.0.0.1","port":1025,"user":"noreply@cildargentina.com","to":"inscripcion@cildargentina.com"}
+[2025-02-08 16:37:56] Cuerpo del correo configurado: Se ha recibido una nueva inscripción desde el formulario de concursocild.
+
+Nombre: CRISTOBAL HENRIQ...
+[2025-02-08 16:37:56] PDF adjuntado al correo: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-37-56.pdf
+[2025-02-08 16:37:56] Archivo adjuntado al correo: formulario_concursocild_CRISTOBAL_2025-02-08_16-35-58.pdf
+[2025-02-08 16:37:56] Archivo adjuntado al correo: formulario_concursocild_CRISTOBAL_2025-02-08_16-35-58.pdf
+[2025-02-08 16:37:56] Archivo adjuntado al correo: testmp3.mp3
+[2025-02-08 16:37:56] Intentando enviar correo
+[2025-02-08 16:37:56] Correo enviado exitosamente
+[2025-02-08 16:37:56] Guardando registro en JSON
+[2025-02-08 16:37:56] Registro guardado exitosamente
+[2025-02-08 16:37:56] Tipo de respuesta: array
+[2025-02-08 16:37:56] Contenido de la respuesta: {"success":true,"message":"Tu inscripci\u00f3n ha sido enviada correctamente.","redirect":"index.php","debug":{"pdf_generated":"uploads\/formulario_concursocild_CRISTOBAL_2025-02-08_16-37-56.pdf","email_sent":true,"registro_guardado":true}}
+[2025-02-08 16:44:02] === Inicio del procesamiento ===
+[2025-02-08 16:44:02] Datos del formulario capturados. Origen: concursocild
+[2025-02-08 16:44:02] Generando PDF para concursocild
+[2025-02-08 16:44:02] Intentando guardar PDF en: C:\xampp\htdocs\CILD\uploads
+[2025-02-08 16:44:02] Permisos de la carpeta uploads: 0777
+[2025-02-08 16:44:02] PDF guardado exitosamente: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-44-02.pdf
+[2025-02-08 16:44:02] Configuración SMTP: {"host":"127.0.0.1","port":1025,"user":"noreply@cildargentina.com","to":"inscripcion@cildargentina.com"}
+[2025-02-08 16:44:02] Cuerpo del correo configurado: Se ha recibido una nueva inscripción desde el formulario de concursocild.
+
+Nombre: CRISTOBAL HENRIQ...
+[2025-02-08 16:44:02] PDF adjuntado al correo: uploads/formulario_concursocild_CRISTOBAL_2025-02-08_16-44-02.pdf
+[2025-02-08 16:44:02] Archivo adjuntado al correo: formulario_concursocild_CRISTOBAL_2025-02-08_16-37-56.pdf
+[2025-02-08 16:44:02] Archivo adjuntado al correo: testmp3.mp3
+[2025-02-08 16:44:02] Intentando enviar correo
+[2025-02-08 16:44:02] Correo enviado exitosamente
+[2025-02-08 16:44:02] Guardando registro en JSON
+[2025-02-08 16:44:02] Registro guardado exitosamente
+[2025-02-08 16:44:02] Tipo de respuesta: array
+[2025-02-08 16:44:02] Contenido de la respuesta: {"success":true,"message":"Tu inscripci\u00f3n ha sido enviada correctamente.","redirect":"index.php","debug":{"pdf_generated":"uploads\/formulario_concursocild_CRISTOBAL_2025-02-08_16-44-02.pdf","email_sent":true,"registro_guardado":true}}

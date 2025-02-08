@@ -218,13 +218,14 @@
       </div>
       <div class="col-md-6">
         <label for="inputFile4" class="form-label">Archivo MP3 (Opcional)</label>
-        <input type="file" class="form-control" id="inputFile4" name="file_musica" accept=".mp3">
+        <input type="file" class="form-control" id="inputFile4" name="file_musica" accept=".mp3" required>
       </div>
 
       <div class="col-md-6">
         <label for="inputDivision" class="form-label">División</label>
         <select class="form-control" id="inputDivision" name="division" required>
           <option value="" disabled selected>Seleccionar</option>
+          <option value="baby">Baby</option>
           <option value="infantil">Infantil</option>
           <option value="joveneso">Jóvenes</option>
           <option value="estudiantes">Estudiantes</option>

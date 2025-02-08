@@ -169,7 +169,7 @@ include_once 'includes/inc.head.php';
             </div>
             <div class="col-md-6">
                 <label class="form-label">Archivo MP3 (opcional)</label>
-                <input type="file" class="form-control" name="file_musica" accept=".mp3">
+                <input type="file" class="form-control" name="file_musica" accept=".mp3" required>
             </div>
 
             <!-- Botón de envío -->
